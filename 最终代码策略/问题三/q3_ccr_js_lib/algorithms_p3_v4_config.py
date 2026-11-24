@@ -1,0 +1,29 @@
+"""Round-four problem-three candidates; no edits to earlier frozen configs."""
+V4_CONFIGS={
+    'p3_v4_regions':dict(passes=2,route='multi',grid=25),
+    'p3_v4_regions_exact':dict(passes=2,route='exact',grid=25),
+    'p3_v4_regions_once':dict(passes=1,route='multi',grid=25),
+    'p3_v4_regions_fine':dict(passes=3,route='multi',grid=10),
+    'p3_v4_regions_gain100':dict(passes=2,route='multi',grid=25,gain=100),
+    'p3_v4_regions_gain300':dict(passes=2,route='multi',grid=25,gain=300),
+    'p3_v4_regions_gain600':dict(passes=2,route='multi',grid=25,gain=600),
+    'p3_v4_regions_greedy':dict(passes=1,route='multi',grid=25,greedy=True),
+    'p3_v4_lazy20':dict(passes=1,route='multi',grid=25,lazy=20),
+    'p3_v4_lazy80':dict(passes=1,route='multi',grid=25,lazy=80),
+    'p3_v4_lazy200':dict(passes=1,route='multi',grid=25,lazy=200),
+    'p3_v4_fixed_lazy20':dict(fixed=True,route='exact',lazy=20),
+    'p3_v4_fixed_lazy80':dict(fixed=True,route='exact',lazy=80),
+    'p3_v4_fixed_lazy200':dict(fixed=True,route='exact',lazy=200),
+    'p3_v4_sweep':dict(passes=1,route='multi',grid=25,sweep=0),
+    'p3_v4_sweep2':dict(passes=1,route='multi',grid=25,sweep=2),
+    'p3_v4_fixed_sweep':dict(fixed=True,route='exact',sweep=0),
+    'p3_v4_opportunistic':dict(passes=1,route='multi',grid=25,opportunistic=True),
+    'p3_v4_bayes_mean':dict(fixed=True,route='exact',posterior='mean'),
+    'p3_v4_bayes_median':dict(fixed=True,route='exact',posterior='median'),
+    'p3_v4_bayes_plan':dict(fixed=True,route='exact',posterior='mean',posterior_plan=True),
+    'p3_v4_bayes_probe':dict(fixed=True,route='exact',posterior='mean',posterior_plan=True,posterior_probe=True),
+    'p3_v4_region_bayes':dict(passes=1,route='multi',grid=25,posterior='mean',posterior_plan=True),
+    'p3_v4_region_probe':dict(passes=1,route='multi',grid=25,posterior='mean',posterior_plan=True,posterior_probe=True),
+}
+
+SELECTED_V4='p3_v4_region_probe'

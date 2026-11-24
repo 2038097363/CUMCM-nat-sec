@@ -1,0 +1,14 @@
+{
+  "version": "final-ccr-js-vc-svs",
+  "questions": {
+    "3": {
+      "engine": "ccr_js",
+      "stop_on_discovery": true
+    },
+    "4": {
+      "engine": "vc_svs",
+      "variant": "no_probe"
+    }
+  },
+  "official_tests_allowed": false
+}
